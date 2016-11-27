@@ -38,5 +38,5 @@
            <button class="inner-btn bg-btn col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">Ver más proyectos</button>
        </div>
    </section>
-    
+
 <?php get_footer('inner'); ?>

@@ -38,7 +38,7 @@
                 </ul>
             </div>
             <div class="row text-center">
-                    <button onclick="location.href='about.php';" class="main-btn col-lg-2 col-lg-offset-5 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2" title="Cónoce más acerca de mi">Conóceme</button>
+                    <button onclick="location.href='/NAG/acerca/';" class="main-btn col-lg-2 col-lg-offset-5 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2" title="Cónoce más acerca de mi">Conóceme</button>
             </div>
        </div>
    </section>

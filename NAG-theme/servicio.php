@@ -15,7 +15,6 @@ include('header-inner.php'); ?>
            <img src="img/servicios-diseno.jpg" alt="" class="img-responsive">
        </figure>
        <div class="sector col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-          <!--insert content-->
            <h3 class="sector-title">Diseño web</h3>
            <div class="sector-par inner-par">
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quaerat saepe accusamus possimus adipisci quasi necessitatibus enim, a! Inventore aspernatur dignissimos natus, quo quidem rerum soluta recusandae tenetur aliquid ullam.</p>
@@ -27,7 +26,6 @@ include('header-inner.php'); ?>
    
    <section class="desarrollo">
        <div class="sector col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-          <!--insert content-->
            <h3 class="sector-title">Desarrollo web</h3>
            <div class="sector-par inner-par">
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quaerat saepe accusamus possimus adipisci quasi necessitatibus enim, a! Inventore aspernatur dignissimos natus, quo quidem rerum soluta recusandae tenetur aliquid ullam.</p>
@@ -42,21 +40,6 @@ include('header-inner.php'); ?>
    
    <section class="mercado">
        <div class="wrap-mercado">
-           <style>
-               .wrap-mercado{
-                    position: absolute;
-                    content: "";
-                    height: 100%;
-                    width: 100%;
-                    background: url('../img/servicios-tiempos.jpg');
-                    background-size: cover;
-                    background-attachment: fixed;
-                    background-position: center;
-                    z-index: -1;
-                    transition: 5s ease;
-                    overflow: hidden;
-                }
-           </style>
        </div>
        <div class="container-fluid mercado-cont">
            <div class="row">

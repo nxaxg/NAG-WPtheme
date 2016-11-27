@@ -46,6 +46,10 @@ section,
     overflow: hidden;
 }
 
+strong{
+    font-family: "ralewaybold";
+}
+
 /*HEADER*/
 .navbar{
     padding: 5px 0;
@@ -274,8 +278,6 @@ body:hover .main{
 .conocimientos{
     padding: 40px 0;
     color: black;
-}
-.conocimientos .conoc{
     overflow: hidden;
     cursor: pointer;
 }
