@@ -1,4 +1,4 @@
-<?php get_header('inner'); ?>
+<?php get_header(); ?>
    
    <style>
         .wrap-about{
@@ -45,4 +45,4 @@
     endwhile; endif;
     ?>
 
-<?php get_footer('inner'); ?>
+<?php get_footer(); ?>

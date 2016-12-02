@@ -30,10 +30,8 @@
         wp_enqueue_style('bootstrap-css', get_template_directory_uri(). '/css/bootstrap.min.css');
         wp_enqueue_style('NAG-site', get_stylesheet_uri());
         wp_enqueue_style('NAG-Mobile', get_template_directory_uri(). '/css/stylesheet-mobile.css');
-        
         wp_enqueue_style('fonts-css', get_template_directory_uri(). '/fonts/theano_raleway/stylesheet.css');
         wp_enqueue_style('awesome-css', get_template_directory_uri(). '/css/font-awesome.min.css');
-        wp_enqueue_style('lightbox-css', get_template_directory_uri(). '/css/lightbox.min.css');
         
     }
     
@@ -45,7 +43,7 @@
         // en adicion a las dependencias podemos indicar que este archivo debe ser insertado en el footer del sitio, en el lugar donde se encuente la funcion wp_footer
         wp_enqueue_script('jq', get_stylesheet_directory_uri(). '/js/jquery-1.11.3.js');
         wp_enqueue_script('boostrap-js', get_stylesheet_directory_uri(). '/js/bootstrap.min.js');
-        wp_enqueue_script('lightbox-js', get_stylesheet_directory_uri(). '/js/scripts.js');
+        wp_enqueue_script('scripts-js', get_stylesheet_directory_uri(). '/js/scripts.js');
     }
 
     add_action( 'wp_enqueue_scripts', 'incrustar_estilos' );

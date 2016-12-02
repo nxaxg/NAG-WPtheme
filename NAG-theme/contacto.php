@@ -1,6 +1,31 @@
 <?php
-$page = "Contacto";
-include('header-inner.php'); ?>
+/*
+Template Name: Contacto
+*/
+?>
+<?php
+
+$error = false;
+
+if(isset($_POST[enviar]) && $_POST[enviar]=="enviar"){
+    $user_contact = "nxayancanxg@gmail.com";
+    $asunto_contact = "Contacto desde NAG portfolio";
+    $mensaje_contact = "El usuario ". $_POST['nombre'] . " (" .$_POST['mail'] . ") desea contactarse:
+    Mensaje: " . $_POST['mensaje']."
+    
+    --Fin del mensaje-- ";
+    $cabecera_contact = "From: <n.ayancan@alumnos.duoc.cl>\n\r";
+
+    if(mail($user_contact, $asunto_contact, $mensaje_contact, $cabecera_contact)){
+        $msj = "Mensaje enviado con éxito <span class='fa fa-thumbs-o-up'><span/>";
+        $error = true;
+    }else{
+        $msj = "Error al intentar enviar mensaje <span class='fa fa-thumbs-o-down'><span/>";
+        $error = true;
+    }
+}
+?> 
+<?php get_header('inner'); ?>
    
    <section class="inner-main">
       <div class="container-fluid">
@@ -18,7 +43,8 @@ include('header-inner.php'); ?>
                   <h3>Hablemos</h3>
               </div>
               <div class="inner-par">
-                  <p>Quizás soy un poco tímido, pero siempre estoy abierto a comentarios, consultas o saludos. Ponte en contacto conmigo y trataré de comunicarme contigo lo más pronto posible.</p>
+                  <p>Quizás soy un poco tímido, pero siempre estoy abierto a comentarios, consultas o saludos. </p>
+                  <p>Ponte en contacto conmigo y trataré de comunicarme contigo lo más pronto posible.</p>
               </div>
               <div class="rrss text-center col-lg-12">
                     <ul class="list-inline rs-list">
@@ -59,5 +85,5 @@ include('header-inner.php'); ?>
           </div>
       </div>
    </section>
-    
-<?php include('footer-hidden.php'); ?>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<?php get_footer('hidden'); ?>

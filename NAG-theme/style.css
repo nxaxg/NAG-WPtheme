@@ -33,10 +33,11 @@ button,
 button:hover,
 button:active,
 button:link,
-button:visited,{
+button:visited{
     color: inherit;
     text-decoration: none;
-    transition: 0.4 ease;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
     outline: 0;
 }
 
@@ -48,6 +49,11 @@ section,
 
 strong{
     font-family: "ralewaybold";
+}
+
+::selection{
+    background: black;
+    color: #d6ac48;
 }
 
 /*HEADER*/
@@ -64,9 +70,6 @@ strong{
     padding-top: 8px;
     padding-bottom: 8px;
 }
-.navbar-brand img:hover{
-    opacity: 1;
-}
 .navbar-tr{
     background-color: transparent;
     border-bottom: 1px solid transparent;
@@ -79,14 +82,17 @@ strong{
 }
 .navbar .nav li{
     border-bottom: 1px solid transparent;
+    -webkit-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
 }
 .nav li a,
-.collapse .nav .nav-selected a{
+.collapse .nav .nav-selected a,
+.nav li.current-menu-item a{
     color: white;
 }
 .nav li:hover,
-.navbar .nav .nav-selected{
+.navbar .nav .nav-selected,
+.nav li.current-menu-item{
     border-bottom: 1px solid #d6ac48;
 }
 
@@ -113,15 +119,18 @@ strong{
     z-index: 2;
     color: white;
     height: 100vh;
+    -webkit-transition: all 5s ease;
     transition: all 5s ease;
     overflow: hidden;
 }
 
 body:hover .wrap{
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 body:hover .main{
     background-color: rgba(0,0,0,0.8);
+    -webkit-transition: 5s ease;
     transition: 5s ease;
 }
 
@@ -150,6 +159,7 @@ body:hover .main{
     padding: 14px;
     width: 2em;
     height: 2em;
+    -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 .rs-list a:hover{
@@ -168,12 +178,14 @@ body:hover .main{
     padding: 10px 0;
     text-transform: uppercase;
     font-family: 'ralewaybold';
+    -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
 }
 .main-btn:hover,
 .inner-btn:hover{
     background-color: #d6ac48;
     color: black;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
@@ -239,6 +251,7 @@ body:hover .main{
     background-attachment: fixed;
     background-position: center;
     z-index: -1;
+    -webkit-transition: 5s ease;
     transition: 5s ease;
     overflow: hidden;
 }
@@ -247,7 +260,9 @@ body:hover .main{
 .mercado:hover .wrap-mercado,
 .main-project:hover .wrap-project,
 .project-info:hover .wrap-pinfo{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: 5s ease;
     transition: 5s ease;
 }
 .proceso .inner-subtitle{
@@ -285,7 +300,9 @@ body:hover .main{
     font-family: 'ralewaybold';
 }
 .conocimientos img:hover{
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
+    -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
 }
 
@@ -345,16 +362,20 @@ body:hover .main{
     position: relative;
 }
 .portfolio-proj img{
+    -webkit-transition: 2s ease-out;
     transition: 2s ease-out;
 }
 .portfolio-proj:hover img{
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: 2s ease-in;
     transition: 2s ease-in;
 }
 .portfolio-proj:hover figcaption{
     background-color: rgba(0,0,0,0.6);
+    -webkit-transition: 2s ease;
     transition: 2s ease;
 }
 .portfolio-proj figcaption{
@@ -370,7 +391,7 @@ body:hover .main{
     padding: 10px;
     text-transform: uppercase;
     border-bottom: 1px solid #d6ac48;
-    font-size: 2;
+    font-size: 2em;
     font-family: 'ralewaybold';
 }
 .portfolio-proj .inner-btn{
@@ -397,7 +418,7 @@ body:hover .main{
 }
 .project{
     padding: 0;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     background-color: rgba(0,0,0,0.6);
     z-index: 4;
@@ -421,7 +442,9 @@ body:hover .main{
     border: 1px solid #d6ac48;
     font-size: 2em;
     color: white;
+    -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
+    margin: 0 10px;
 }
 .project-link a span:hover{
     -webkit-transform: scale(1.1);
@@ -449,6 +472,7 @@ body:hover .main{
 .project-tags li a:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
     background-color: #d6ac48;
     color: black;
@@ -503,6 +527,7 @@ body:hover .main{
     background-attachment: fixed;
     background-position: center;
     z-index: -1;
+    -webkit-transition: 5s ease;
     transition: 5s ease;
     overflow: hidden;
 }
@@ -522,6 +547,7 @@ body:hover .main{
 .pdata h4:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
     border: 1px solid transparent;
     color: #d6ac48;
@@ -575,6 +601,10 @@ body:hover .main{
     font-size: 1.2em;
 }
 
+.contacto .inner-btn:hover{
+    color: white;
+}
+
 /*footer*/
 footer{
     padding: 0;
@@ -589,10 +619,12 @@ footer .copyright a{
     font-family: 'ralewaythin';
     padding: 0 2px;
     color: #d6ac48;
+    -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
 }
 footer .copyright a:hover{
     text-decoration: line-through;
+    -webkit-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
 }
 footer .rrss .rs-list{
@@ -642,10 +674,6 @@ header .lang span:hover{
 }
 
 /*wp*/
-
-.captcha{
-    background-color: red;
-}
 
 .lang-wp{
     position: absolute;

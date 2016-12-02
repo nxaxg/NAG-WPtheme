@@ -37,7 +37,7 @@
                     </button>
                     <!--/icon bar-->
                     <!--logo-->
-                    <a class="navbar-brand" href="/NAG/" title="Take me home">
+                    <a class="navbar-brand" href="<?php echo get_home_url(); ?>" title="Take me home">
                         <img src="<?php bloginfo('template_url')?>/img/logo-white.png" alt="NAG" class="img-responsive" alt="Logo NAG">
                     </a>
                     <!--/logo-->

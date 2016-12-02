@@ -1,4 +1,4 @@
-<?php get_header('inner'); ?>
+<?php get_header(); ?>
   
    <section class="inner-main">
       <div class="container-fluid">
@@ -39,4 +39,4 @@
        </div>
    </section>
 
-<?php get_footer('inner'); ?>
+<?php get_footer(); ?>

@@ -1,4 +1,4 @@
-<?php get_header('inner'); ?>
+<?php get_header(); ?>
    
    <section class="main-project">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -29,21 +29,30 @@
             <div class="row">
                 <div class="project-link text-center col-lg-12">
                    <!--link a proyecto-->
-                   <?php $link = get_post_custom_values('link'); ?>
-                    <a href="<?php echo $link[0]; ?>" title="Link a proyecto" target="_blank"><span class="fa fa-link"></span></a>
+                   <?php $link = get_post_custom_values('link');
+                        $behance = get_post_custom_values('behance');
+                        $git = get_post_custom_values('git');
+                        if($link){?>
+                            <a href="<?php echo $link[0]; ?>" title="Link a proyecto" target="_blank"><span class="fa fa-link"></span></a>
+                       <?php } if($git){ ?>
+                           <a href="<?php echo $git[0]; ?>" title="Link a proyecto" target="_blank"><span class="fa fa-github"></span></a>
+                    <?php } if($behance){ ?>
+                            <a href="<?php echo $behance[0]; ?>" title="Link a proyecto" target="_blank"><span class="fa fa-behance"></span></a>
+                    <?php } ?>
                 </div>
             </div>
             <div class="row">
                <!--tags-->
                 <ul class="project-tags list-inline col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                    <!--<li><a href="#">Html5</a></li>-->
+                    <!--project tags-->
                     <?php the_tags('<li>', '</li> <li>', '</li>'); ?>
                 </ul>
             </div>
             <div class="row">
                <!--fecha-->
                <?php $fecha = get_post_custom_values('fecha'); ?>
-                <p class="project-date"><span class="fa fa-calendar-o"></span> 
+                <p class="project-date">
+                   <span class="fa fa-calendar-o"></span> 
                     <?php
                         if (isset($fecha[0])) {  
                             echo $fecha[0];  
@@ -67,32 +76,14 @@
            </div>
        </div>
    </section>
-   </section>
    
-   <!--project info-->
-   <section hidden="hidden" class="project-info">
-       <div class="wrap-pinfo"></div>
-       <div class="project-data">
-          <div class="row text-center">
-              <h2 class="inner-subtitle col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">Variables estimadas</h2>
-          </div>
-           <div class="container text-center">
-               <div class="pdata col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                   <h4>10 días</h4>
-               </div>
-               <div class="pdata col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <h4>100hrs.</h4>
-               </div>
-               <div class="pdata col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <h4>$100.000</h4>
-               </div>
-               <div class="pdata col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <h4>$500USD</h4>
-               </div>
-           </div>
-       </div>
-   </section>
+   <div class="portfolio-btn">
+        <button onclick="history.back(-1)" class="inner-btn bg-btn col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">Volver a proyectos</button>
+    </div>
+    
    <?php endwhile; endif; ?>
 
-
-<?php get_footer('inner');?>
+<script>
+    $(".nav li:nth-child(3)").addClass('nav-selected');
+</script>
+<?php get_footer();?>

@@ -55,6 +55,15 @@
 
 @media only screen and (max-width:768px){
     
+    .inner-title,
+    .project-title{
+        font-size: 2.5em;
+    }
+    
+    .portfolio-proj .portfolio-title{
+        font-size: 1.8em;
+    }
+    
     .navbar .nav{
         background-color: #1d1d1d;
         text-transform: uppercase;
@@ -67,6 +76,24 @@
     
     .navbar .nav li{
         padding: 20px 0;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+    }
+    
+    .navbar .nav li a{
+        font-size: 1.2em;
+    }
+    
+    .nav li:hover,
+    .navbar .nav .nav-selected,
+    .nav li.current-menu-item{
+        border-bottom: 1px solid transparent;
+        border-left: 3px solid #d6ac48;
+    }
+    
+    .nav .wg-li,
+    .nav .wg-li:hover{
+        border-left: 3px solid transparent;
     }
     
     #main .main-title{
@@ -80,7 +107,7 @@
     
     /*project*/
     .portfolio-proj figcaption{
-        padding: 10% 0 0 0;
+        padding: 7% 0 0 0;
     }
     
     .project-title{

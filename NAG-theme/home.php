@@ -33,7 +33,7 @@
            <div class="row">
                 <ul class="list-inline rs-list text-center">
                     <li><a href="https://cl.linkedin.com/in/nxaxg" class="fa fa-linkedin" title="Link a Linkedin" target="_blank"></a></li>
-                    <li><a href="https://github.com/nxaxg" class="fa fa-github" title="Link a Github" target="_blank"></a></li>
+                    <li><a href="https://github.com/nxaxg" class="fa fa-github-alt" title="Link a Github" target="_blank"></a></li>
                     <li><a href="https://www.behance.net/nxaxg" class="fa fa-behance" title="Link a Behance" target="_blank"></a></li>
                 </ul>
             </div>
