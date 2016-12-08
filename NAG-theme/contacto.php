@@ -64,18 +64,18 @@ if(isset($_POST[enviar]) && $_POST[enviar]=="enviar"){
           <div class="formulario col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <form method="post">
                   <div class="form-group">
-                    <input type="text" class="form-control" id="cNombre" name="nombre" placeholder="Nombre">
+                    <input type="text" class="form-control" id="cNombre" name="nombre" placeholder="Nombre" required>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" id="cMail" name="mail" placeholder="Mail">
+                    <input type="email" class="form-control" id="cMail" name="mail" placeholder="Mail" required>
                   </div>
                   <div class="form-group">
-                      <textarea class="form-control" rows="3" id="cMensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                      <textarea class="form-control" rows="3" id="cMensaje" name="mensaje" placeholder="Mensaje" required></textarea>
                   </div>
                   <!--captcha-->
                   <div class="form-group">
                       <div class="cap text-center col-lg-8 col-lg-offset-2">
-                          <div class="g-recaptcha" data-sitekey="6Lfj8AwUAAAAALZcLhHmr-6F6-eTUA-T0MJVmbFL"></div>
+                          <div class="g-recaptcha" data-sitekey="6LeUGQ4UAAAAALOUtb3koH6BAT3Ib7zpHu0Ktryt"></div>
                       </div>
                   </div>
                   <div class="form-group">

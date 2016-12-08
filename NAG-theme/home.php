@@ -25,7 +25,7 @@
               </figure>
            </div>
            <div class="row">
-               <h1 class="main-title text-center">Nicolas Ayancan Guerrero</h1>
+               <h1 class="main-title text-center">Nicolás Ayancán Guerrero</h1>
            </div>
            <div class="row">
                <h2 class="main-subtitle text-center">Desarrollador Web</h2>
@@ -38,7 +38,7 @@
                 </ul>
             </div>
             <div class="row text-center">
-                    <button onclick="location.href='/NAG/acerca/';" class="main-btn col-lg-2 col-lg-offset-5 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2" title="Cónoce más acerca de mi">Conóceme</button>
+                    <button onclick="location.href='/NAG/acerca/';" class="main-btn col-lg-2 col-lg-offset-5 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2" title="Conoce más acerca de mi">Conóceme</button>
             </div>
        </div>
    </section>

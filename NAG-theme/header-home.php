@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title><?php bloginfo(name); ?></title>
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+    
+    <title><?php bloginfo(name); ?> <?php wp_title(); ?></title>
     <link href="<?php bloginfo(stylesheet_url); ?>" rel="stylesheet" type="text/css">
     <!--META-->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="Portfolio de proyectos Nicolas Ayancan Guerrero -> NAG">
-    <meta name="keywords" content="portfolio, diseño, desarrollo, web, proyectos, portafolio, projects, diseño web, desarrollo web">
+    <meta name="keywords" content="portfolio, dise単o, desarrollo, web, proyectos, portafolio, projects, dise単o web, desarrollo web">
     <meta name="robots" content="all">
     <!--Google analytics shortcode-->
     <script>
